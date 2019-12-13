@@ -1,13 +1,3 @@
-// function plusMinus(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     if (i === i) {
-//       (i++)/arr.length
-//     }else{
-//       (i)/arr.length 
-//     }
-//   }
-// }
-
 function plusMinus(arr) {
   let positives = 0, negatives = 0, zeros = 0;
   const len = arr.length || 0;
