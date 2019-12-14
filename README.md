@@ -22,5 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# testinggit
-# script
+
+This repo is a compilation of coding challenges/functions
+All challenges in progress and completed are saved under app/assets/javascripts
+
