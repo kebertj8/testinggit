@@ -7,5 +7,5 @@ function birthdayCakeCandles(ar) {
       maxHeightCount = maxHeightCount + 1;
     }
   }
-  console.log(maxHeightCount);
+  return maxHeightCount;
 }
