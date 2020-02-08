@@ -20,12 +20,12 @@
 // }
 
 // 2/7/20
-// function timeConversion(s) {
-//   var time = readLine();
-//   var s = 12;
-//   if (time === /(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)/) {
-//     return time
-//   } else {
-//     console.log("test")
-//   }
-// }
+function timeConversion(s) {
+  var time = readLine();
+  var s = 12;
+  if (time === /(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)/) {
+    return time
+  } else {
+    console.log("test")
+  }
+}
