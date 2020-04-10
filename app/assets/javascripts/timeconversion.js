@@ -32,18 +32,28 @@
 
 
 // 4/1/20
-function main (){
-var time = readLine();
+// function main (){
+// var time = readLine();
 
-let hours = time.substring(0, 2);
-let mins = time.substring(3, 2);
-let secs = time.substring(6, 2);
-let pmOrAm = time.substring(-2, 2);
+// let hours = time.substring(0, 2);
+// let mins = time.substring(3, 2);
+// let secs = time.substring(6, 2);
+// let pmOrAm = time.substring(-2, 2);
 
-if (hours == '12' & pmOrAm == 'AM') {
-  console.log(`00:${mins}:${secs}`)
-} else if (hours !== '12' & pmOrAm == 'PM') {
-  console.log(`${parseInt(hours) + 12}:${mins}:${secs}`)
-} else {
-  console.log(`${hours}:${mins}:${secs}`)} 
-} 
+// if (hours == '12' & pmOrAm == 'AM') {
+//   console.log(`00:${mins}:${secs}`)
+// } else if (hours !== '12' & pmOrAm == 'PM') {
+//   console.log(`${parseInt(hours) + 12}:${mins}:${secs}`)
+// } else {
+//   console.log(`${hours}:${mins}:${secs}`)} 
+// } 
+
+// Winner!!!
+
+function timeConversion(s) {
+  const arr = s.slice(0, 8).split(':');
+  arr[0] = (s.indexOf('PM') > -1) ?
+    (arr[0] == 12 ? '12' : Number(arr[0]) + 12) :
+    (arr[0] == 12 ? '00' : arr[0]);
+  return arr.join(':');
+}
