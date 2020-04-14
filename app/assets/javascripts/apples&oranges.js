@@ -33,12 +33,10 @@ function countApplesAndOranges(s, t, a, b, apples, oranges) {
 
 
 
- let appleCounter = apples.filter((value) => value + a >= s && value <= t).length
+ console.log(apples.filter((value) => value + a >= s && value <= t).length)
 
- let orangeCounter = oranges.filter((value) => value + a >= s && value <= t).length
+ console.log(oranges.filter((value) => value + a >= s && value <= t).length)
 
- console.log(appleCounter)
- console.log(orangeCounter)
  
 
 
