@@ -1,54 +1,37 @@
-  function range(start, end) {
-    var ans = [];
-    for (let i = start; i <= end; i++) {
-        ans.push(i);
+  function multiplesOf3and5(number) {
+  let total = 0;
+  for (let i = 0; i <= number; i++) {
+    if (i % 3 == 0 || i % 5 == 0) {
+      total += i;
     }
-    return ans;
-}
-
-function multiplesOfThreeAndFive() {   
-
-  sum = []
-  total = 0;
-  y = []
-  x = [range(1,1000)];
-  if (x[i]/3 == 0 ) {
-      sum.push(i);
-    } else if (x[i]/5 == 0) {
-      sum.push(i)
-    } else {
-      y.push(i)
-    }
-    for (var i =0; i < sum.length; i++) {
-      total += sum[i]
-    }
-    return total
   }
+  return total;
+}
+    
 
+//   function range(start, end) {
+//     var ans = [];
+//     for (let i = start; i <= end; i++) {
+//         ans.push(i);
+//     }
+//     return ans; 
+// }
 
 // function multiplesOfThreeAndFive() {   
-  
-//   var sum = []
-//   y = []
+//   sum = []
 //   x = [range(1,1000)];
-//   if (x[i]/3 == 0 ) {
+//   if (x[i]/3 ==0 || x[i]/5 == 0 ) {
 //       sum.push(i);
-//     } else if (x[i]/5 == 0) {
-//       sum.push(i)
 //     } else {
-//       y.push(i)
+//       x = x 
 //     }
-//     return sum
 //   }
-// range(1, 1000); 
-// for (i of range(1, 5)) {
-//     console.log(i);
+
+// function count() {
+//   total = 0;
+//   x = [multiplesOfThreeAndFive]
+// for (var i =0; i < x.length; i++) {
+//       total += x[i]
+//     }
+//     return total
 // }
-// /* Output
-//  * 1 2 3 4 5 */
-
-// [...range(1, 5)] // [1, 2, 3, 4, 5]
-  // console.log(i);
-
-// function that loops from 1-1000 that looks for 
-// all instances that the multiples are of 3 or five , and counts the results. then print the results. 
